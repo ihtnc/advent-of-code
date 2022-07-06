@@ -166,7 +166,7 @@ public class ProblemTests : BaseTests<Problem>
         };
 
         // ACT
-        var actual = _problem.Solve(option);
+        _problem.Solve(option);
 
         // ASSERT
         _textHelper.Received(0).ParseInput<int>(Arg.Any<string>(), Arg.Any<InputConverterDelegate>(), Arg.Any<ValueConverterDelegate<int>>());
@@ -184,7 +184,7 @@ public class ProblemTests : BaseTests<Problem>
         };
 
         // ACT
-        var actual = _problem.Solve(option);
+        _problem.Solve(option);
 
         // ASSERT
         _textHelper.Received(1).ParseInput<int>(input, Arg.Any<InputConverterDelegate>(), Arg.Any<ValueConverterDelegate<int>>());

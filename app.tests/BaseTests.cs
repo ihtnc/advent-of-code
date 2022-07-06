@@ -5,7 +5,7 @@ using AdventOfCode.Shared;
 
 namespace AdventOfCode.App.Tests;
 
-public abstract class BaseTests<T> where T : IProblem
+public abstract class BaseTests<T> where T : IProblem, new()
 {
     public BaseTests(int year, int day)
     {
