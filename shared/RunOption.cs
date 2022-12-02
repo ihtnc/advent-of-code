@@ -15,5 +15,5 @@ public class RunOption
     public virtual int Part { get; set; }
 
     [Option('i', "input", Required = true, HelpText = "Specifies any additional input parameters required for solving the problem.")]
-    public virtual string? Input { get; set; }
+    public virtual string Input { get; set; } = string.Empty;
 }

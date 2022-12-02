@@ -15,4 +15,7 @@ public class ErrorDescription : Description
     {
         return Text;
     }
+
+    public static Description UnsupportedProblemPart(int problemPart)
+        => new ErrorDescription($"Problem has no part {problemPart}.");
 }
